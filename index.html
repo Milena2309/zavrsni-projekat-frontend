@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Predjela, supe, čorbe, glavna jela, torte i kolače pripremićete jednostavno i brzo. Povrće, meso, voće, čokolada">
+    <meta name="keywords"
+        content="domaći recepti, meso, voće, povrće, čokolada, predjela, supe čorbe, torte, kolači, glavna jela">
+    <meta name="author" content="Milena Rodić | milena.projekat@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moja domaća kuhinja | Domaći recepti</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body onload="Citati(), Vreme()">
+
+    <header>
+        <!-- početak navigacije -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-cutlery"
+                            aria-hidden="true"></span> Moja domaća kuhinja</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="galerija.html">Galerija <span class="sr-only"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="recepti.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Recepti <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="recepti.html">Recepti</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="recepti.html#domaci">Domaći specijaliteti</a></li>
+                                <li><a href="recepti.html#glavna">Glavna jela</a></li>
+                                <li><a href="recepti.html#dezerti">Dezerti</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="spisak.html">Spisak za kupovinu</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!-- kraj navigacije -->
+
+        <div class="page-header">
+            <!-- početak hedera -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-circle imgHeader" src="slike/logo.png" alt="Moja domaca kuhinja">
+                        </div>
+                        <div class="col-md-8">
+                            <h1 class="senka">Moja domaća kuhinja</h1>
+                        </div>
+                        <div class="col-md-2">
+                            <!-- Desni deo hedera gde je sat -->
+                            <div class="input-group">
+                                <!-- Input group class -->
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                                </span>
+                                <form name="vremeForma">
+                                    <input type="text" name="cifre" class="form-control">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- kraj hedera -->
+
+
+        <section id="cover">
+            <h4><small>Moja domaća kuhinja</small></h4>
+            <!-- Banner -->
+            <section id="banner">
+                <h2>Moja domaća kuhinja</h2>
+                <p class="lead"><small>Predjela, supe, čorbe, glavna jela, torte i kolače pripremićete jednostavno i
+                        brzo. Povrće, meso, voće, čokolada, malo vremena i dobra volja su sastojci koji su
+                        Vam potrebni. Uživajte u zdravoj i ukusnoj domaćoj hrani.</small></p>
+            </section>
+        </section>
+    </header>
+    <div>
+        <!-- početak omotača -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <!-- početak prvog jumbotron-a -->
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="page-header senka">Rekli su o hrani</h3>
+                            <blockquote>
+                                <p id="citat"></p>
+                                <small><cite id="autor"></cite></small>
+                            </blockquote>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="page-header senka">Savet</h3>
+                            <p>"Dodajte paradajz i origano da jelo učinite italijanskim, dodajte vino i estragon da
+                                ga pretvorite u francuski specijalitet. Dodajte pavlaku za ruski šmek, a limun i
+                                cimet za grčki. Dodajte soja sos da jelo postane kinesko, ali dodajte beli luk da bi
+                                postalo dobro."</p>
+                            <p><small><em> - Elis Mej Brok</em></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- kraj prvog jumbotron-a -->
+        <div class="row">
+            <!-- početak drugog jumbotron-a -->
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="page-header senka">Naša današnja preporuka</h2>
+                            <div class="col-md-4">
+                                <div class="caption">
+                                    <h3 class="page-header">Domaći čvarci</h3>
+                                </div>
+                                <p>Za početak domaći čvarci.</p>
+                                <div class=" thumbnail">
+                                    <img src="slike/recepti/cvarci.jpg" alt="Domaći čvarci">
+                                </div>
+                                <p><a class="btn btn-primary btn-lg dugme" href="recepti.html#domaci" role="button">Više
+                                        <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span></a></p>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="caption">
+                                    <h3 class="page-header">Pileći bataci sa povrćem</h3>
+                                </div>
+                                <p>Uživajte u ovom laganom i ukusnom jelu.</p>
+                                <div class=" thumbnail">
+                                    <img src="slike/recepti/bataci.jpg" alt="Pileći bataci sa povrćem">
+                                </div>
+                                <p><a class="btn btn-primary btn-lg dugme" href="recepti.html#glavna" role="button">Više
+                                        <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span></a></p>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="caption">
+                                    <h3 class="page-header">Najbrža čokoladna torta</h3>
+                                </div>
+                                <p>Obrok završite vrlo ukusnom tortom.</p>
+                                <div class=" thumbnail">
+                                    <img src="slike/recepti/tortaCokolada.jpg" alt="Čokoladna torta">
+                                </div>
+                                <p><a class="btn btn-primary btn-lg dugme" href="recepti.html#dezerti"
+                                        role="button">Više <span class="glyphicon glyphicon-cutlery"
+                                            aria-hidden="true"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- kraj drugog jumbotron-a -->
+        <div class="row">
+            <!-- početak treceg jumbotron-a -->
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="page-header senka">Mere bez vage</h2>
+                            <div class="col-md-3">
+                                <br>
+                                <p>Kašičica je mala kafena.</p>
+                                <p>Kašika je velika supena.</p>
+                                <p>Šolja je od 2,5 dl. </p>
+                                <p>Čaša je od 2 dl. </p>
+                            </div>
+                            <div class="col-md-3">
+                                <p>Jedna ravna supena kašika sadrži:</p>
+                                <ul>
+                                    <li>15 g soli ili šećera ili prezli ili kakaoa</li>
+                                    <li>10 g sode bikarbone</li>
+                                    <li>20 g pirinča ili brašna ili maslaca ili meda</li>
+                                    <li>30 g džema</li>
+                                    <li>10 ml vode</li>
+                                </ul>
+                                <p>Jedna ravna kafena kašičica sadrži:</p>
+                                <ul>
+                                    <li>5 g soli ili šećera</li>
+                                    <li>7 g pirinča ili maslaca ili meda ili kakaoa</li>
+                                    <li>8 g brašna</li>
+                                    <li>4 ml ulja</li>
+                                    <li>3 ml mleka</li>
+                                    <li>7 ml vode</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 poravnanje">
+                                <p>Jedna čaša sadrži:</p>
+                                <ul>
+                                    <li>2 dl tečnosti</li>
+                                    <li>150 gr šećera</li>
+                                    <li>120 g brašna</li>
+                                    <li>150 g pririnča</li>
+                                </ul>
+                                <p>Jedna šolja sadrži:</p>
+                                <ul>
+                                    <li>2,2 dl tečnosti</li>
+                                    <li>2 dl ulja</li>
+                                    <li>260 gr šećera</li>
+                                    <li>125 g brašna</li>
+                                    <li>250 g pririnča</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-rounded kuhinja" src="slike/vage.jpg" alt="Moja domaća kuhinja">
+                                <a class="btn btn-primary btn-lg dugme" href="dokumenti/Mere.pdf"
+                                    target="_blank">Preuzmi <span class="glyphicon glyphicon-download-alt"
+                                        aria-hidden="true"></span></a>
+                                <a class="btn btn-primary btn-lg dugme" href="preuzmi/mere.html" target="_blank">Štampaj
+                                    <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- kraj treceg jumbotron-a -->
+    </div> <!-- kraj omotača -->
+
+    <footer>
+        <!-- početak footer-a -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <br>
+                    <div class="caption">
+                        <p class="text-justify">
+                            <strong>Moja domaća kuhinja - obrok za svakoga</strong></p>
+                        <p>Naša misija je da Vam olakšamo pripremu svakodnevnih obroka. Trudimo se
+                            da
+                            objavljujemo
+                            recepte koji su jednostavni i brzi za pripremu, a nadasve ukusni. Imamo
+                            za
+                            svakoga
+                            po nešto.
+                        </p>
+                        <p>Prijatno!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="index.html"><img class="img-circle imgFooter" src="slike/logo-hrana.png"
+                            alt="Moja domaca kuhinja"></a>
+                </div>
+                <div class="col-md-4">
+                    <br>
+                    <p class="poravnanje"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                        Savski
+                        nasip 7,
+                        Beograd
+                        11000 </p>
+                    <p class="poravnanje"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> +381
+                        11
+                        201 55 00
+                    </p>
+                    <p class="poravnanje"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        info@code.edu.rs
+                    </p>
+                </div>
+            </div> <!-- kraj gornjeg dela footer-a -->
+        </div>
+        <div class="panel-footer">
+            <!-- donji deo footer-a -->
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p class="text-center">Copyright &copy; 2019 Moja domaća kuhinja </p>
+                </div>
+            </div>
+        </div> <!-- kraj donjeg dela footer-a -->
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

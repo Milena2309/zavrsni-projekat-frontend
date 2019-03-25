@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="kontakt,domaća kuhinja">
+    <meta name="author" content="Milena Rodić | milena.projekat@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moja domaća kuhinja | Kontakt</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body onload="Vreme()">
+    <header>
+        <!-- početak navigacije -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Moja domaća kuhinja</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="galerija.html">Galerija <span class="sr-only"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="recepti.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Recepti <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="recepti.html">Recepti</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="recepti.html#domaci">Domaći specijaliteti</a></li>
+                                <li><a href="recepti.html#glavna">Glavna jela</a></li>
+                                <li><a href="recepti.html#dezerti">Dezerti</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="spisak.html">Spisak za kupovinu</a></li>
+                        <li class="active"><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!-- kraj navigacije -->
+
+        <div class="page-header">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-circle imgHeader" src="slike/logo.png" alt="Moja domaca kuhinja">
+                        </div>
+                        <div class="col-md-8">
+                            <h1 class="senka">Moja domaća kuhinja</h1>
+                        </div>
+                        <div class="col-md-2">
+                            <!-- Desni deo hedera gde je sat -->
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                                </span>
+                                <form name="vremeForma">
+                                    <input type="text" name="cifre" class="form-control">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="jumbotron">
+        <div class="row">
+            <div class="container-fluid">
+                <h2 class="page-header senka"><strong><em>Moja domaća kuhinja<br>Kontakt</em></strong></h2>
+            </div>
+            <div class="col-md-6">
+                <h2 class="page-header">Nađite nas</h2>
+                <div class="forma">
+                    <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                        Savski nasip 7, Beograd 11000 </p>
+                    <p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> +381
+                        11
+                        201 55 00
+                    </p>
+                    <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        info@code.edu.rs</p>
+                    <p><a href="index.html"><img class="imgMi" src="slike/svet.jpg"
+                                alt="Moja domaca kuhinja"></a></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="page-header">Kontaktirajte nas</h2>
+
+                <form class="forma" name="forma" method="post" action="php/kontakt.php">
+
+                    <label for="ime">Vaše ime i prezime:</label>
+                    <input class="formaInput" type="text" id="ime" name="ime" placeholder="Unesite ime i prezime"
+                        value="">
+
+                    <label for="email">Email adresa:</label>
+                    <input class="formaInput" type="text" id="email" name="email" placeholder="Unesite e-mail adresu">
+
+                    <label for="telefon">Vaš telefon:</label>
+                    <input class="formaInput" type="text" id="telefon" name="telefon" placeholder="Unesite telefon">
+
+                    <label for="ime">Vaš komentar:</label>
+                    <textarea class="formaTextarea" id="komentar" rows="5" name="komentar"
+                        placeholder="Unesite Vaš komentar"></textarea>
+
+                    <button class="registracija" type="submit" name="Submit" value="Registruj se"
+                        onclick="proveri()">Pošalji</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <!-- početak footer-a -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <br>
+                    <div class="caption">
+                        <p class="text-justify">
+                            <strong>Moja domaća kuhinja - obrok za svakoga</strong></p>
+                        <p>Naša misija je da Vam olakšamo pripremu svakodnevnih obroka. Trudimo se
+                            da
+                            objavljujemo
+                            recepte koji su jednostavni i brzi za pripremu, a nadasve ukusni. Imamo
+                            za
+                            svakoga
+                            po nešto.
+                        </p>
+                        <p>Prijatno!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="index.html"><img class="img-circle imgFooter" src="slike/logo-hrana.png"
+                            alt="Moja domaca kuhinja"></a>
+                </div>
+                <div class="col-md-4">
+                    <br>
+                    <p class="poravnanje"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                        Savski
+                        nasip 7,
+                        Beograd
+                        11000 </p>
+                    <p class="poravnanje"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> +381
+                        11
+                        201 55 00
+                    </p>
+                    <p class="poravnanje"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        info@code.edu.rs
+                    </p>
+                </div>
+            </div> <!-- kraj gornjeg dela footer-a -->
+        </div>
+        <div class="panel-footer">
+            <!-- donji deo footer-a -->
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p class="text-center">Copyright &copy; 2019 Moja domaća kuhinja </p>
+                </div>
+            </div>
+        </div> <!-- kraj donjeg dela footer-a -->
+    </footer>
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

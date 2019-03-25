@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="kupovina, namirnice, sastojci">
+    <meta name="author" content="Milena Rodić | milena.projekat@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moja domaća kuhinja | Spisak za kupovinu</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- početak navigacije -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Moja domaća kuhinja</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="galerija.html">Galerija <span class="sr-only"></span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="recepti.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Recepti <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="recepti.html">Recepti</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="recepti.html#domaci">Domaći specijaliteti</a></li>
+                                <li><a href="recepti.html#glavna">Glavna jela</a></li>
+                                <li><a href="recepti.html#dezerti">Dezerti</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="spisak.html">Spisak za kupovinu</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!-- kraj navigacije -->
+
+        <div class="page-header">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="img-circle imgHeader" src="slike/logo.png" alt="Moja domaca kuhinja">
+                        </div>
+                        <div class="col-md-8">
+                            <h1 class="h1Senka">Moja domaća kuhinja</h1>
+                        </div>
+                        <div class="col-md-2">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid jumbotron">
+        <!-- početak omotača -->
+        <h2 class="page-header senka"><strong><em>Spisak za kupovinu</em></strong></h2>
+        
+        <div class="col-md-2" id="spisakCvarci"></div>
+        <div class="col-md-2" id="spisakZacin"></div>
+        <div class="col-md-2" id="spisakBataci"></div>
+        <div class="col-md-2" id="spisakMlinci"></div>
+        <div class="col-md-2" id="spisakCokoTorta"></div>
+        <div class="col-md-2" id="spisakVocnaTorta"></div>        
+
+        <div class="row">
+            <div class="col-md-12 centriranje">
+                <p>U polja ispod unesite broj 1 ukoliko želite da se taj recept nađe na spisku za
+                    kupovinu.<small> Мožete popuniti i više polja</small>.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- početak sastojaka -->
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail thumbnailSpisak">
+                            <div class="caption">
+                                <input type="text" id="jedan" name="jedan" size="1" placeholder="0">
+                                <h4>Domaći čvarci i mast</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail thumbnailSpisak">
+                            <div class="caption">
+                                <input type="text" id="dva" name="dva" size="1" placeholder="0">
+                                <h4>Suvi začin</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail thumbnailSpisak">
+                            <div class="caption">
+                                <input type="text" id="tri" name="tri" size="1" placeholder="0">
+                                <h4>Pileći bataci sa povrćem</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail thumbnailSpisak">
+                            <div class="caption">
+                                <input type="text" id="cetiri" name="cetiri" size="1" placeholder="0">
+                                <h4>Mlinci sa piletinom i spanaćem</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail thumbnailSpisak">
+                            <div class="caption">
+                                <input type="text" id="pet" name="pet" size="1" placeholder="0">
+                                <h4>Najbrža čokoladna torta</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail thumbnailSpisak">
+                            <div class="caption">
+                                <input type="text" id="sest" name="sest" size="1" placeholder="0">
+                                <h4>Najlepša voćna torta</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- kraj sastojaka -->
+
+        <a class="btn btn-primary btn-lg dugme registracija" onClick="spisak()">Napravi spisak za kupovinu</a>
+
+    </div> <!-- kraj omotača -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

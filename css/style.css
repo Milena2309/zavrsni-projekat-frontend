@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0FFFF;
+}
+
+ul {
+    list-style: none;
+}
+
+.thumbnailSpisak {
+    background-color: transparent;
+    border: 0;
+    position: relative;
+}
+
+.centriranje {
+    text-align: center;
+}
+
+.dugme {
+    color: #fff;
+    background-color: #00CED1;
+    border-color: #2e6da4;
+}
+
+.dugme:hover {
+    background-color: #00868B;
+}
+
+section#cover {
+    background-image: url("../slike/dust.png"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../slike/hrana.jpg"); /* prvo ide transparentna slika pa onda ne transparentna */
+    background-attachment: scroll, scroll, fixed;
+    background-position: center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, auto, cover;
+    height: 700px;
+    text-align: center;
+}
+
+section#banner {
+    color: #fff;
+    text-shadow: 0 0 3px #00CED1, 0 0 5px #0000FF;
+    height: 0;
+    width: 85%;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#banner h2 {
+    font-size: 3.5em;
+}
+#banner p {
+    font-size: 2em;
+}
+#banner ul li {
+    display: inline-block;
+}
+
+.page-header {
+    text-align: center;
+    border-bottom: 1px solid #00CED1;
+}
+
+.h3Recepti {
+    text-align: left;
+}
+
+.imgRecepti {
+    width: 20%;
+    height: auto;
+}
+
+.senka {
+    text-shadow: 0 0 3px #00CED1;
+}
+
+.input-group {
+    margin: 15% 20% 0 20%;
+}
+
+.input-group-addon {
+    color: #F0FFFF;
+    background-color: #00CED1;
+    border: 1px solid #00CED1;
+}
+
+.form-control {    
+    color: #555;
+    background-color: #fff;    
+    border: 1px solid #00CED1;
+}
+
+.navbar-default {
+    background-color: #F0FFFF; /* Za brauzere koji ne podržavaju gradijant */
+    background-image: radial-gradient(#F0FFFF, #F0FFFF, #99fdff); /* Standardna sintaksa (mora da bude poslednje) */
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #99fdff;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #99fdff;
+}
+
+.forma {
+    width: 100%;
+    height: 550px;
+    box-sizing: border-box;
+    border: 1px solid #00CED1;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+    margin-bottom: 10%;
+}
+
+.formaInput,
+.formaTextarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #00CED1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.registracija {
+    width: 100%;
+    color: #fff;
+    background-color: #00CED1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registracija:hover {
+    background-color: #00868B;
+} 
+
+.imgHeader {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgFooter {
+    padding: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.imgMi {
+    display: block;
+    margin: 2.5% auto 0 auto;
+    width: 80%;
+    border-radius: 5%;
+}
+
+.imgStampa {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding-top: 2%;
+    background-color: #F0FFFF; /* Za brauzere koji ne podržavaju gradijant */
+    background-image: radial-gradient(#F0FFFF, #F0FFFF, #99fdff); /* Standardna sintaksa (mora da bude poslednje) */
+}
+
+.headerH4 {
+    color: #F0FFFF;
+}
+
+.jumbotron {
+    padding: 0 2% 0 2%;
+    background: rgba(240, 255, 255, 0.9);
+}
+
+.mere {
+    margin-top: 20%;
+    list-style: none;
+    font-size: 16px;
+}
+
+.poravnanje {
+    padding-left: 5%;
+}
+
+.kuhinja {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    margin-bottom: 2%;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #00CED1;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+
+.donjaLinija {
+    border-bottom: 3px solid #00CED1;
+}
+
+footer,
+.panel-footer {
+    background-color: #F0FFFF; /* Za brauzere koji ne podržavaju gradijant */
+    background-image: radial-gradient(#F0FFFF, #F0FFFF, #99fdff); /* Standardna sintaksa (mora da bude poslednje) */
+}
